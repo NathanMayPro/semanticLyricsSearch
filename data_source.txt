@@ -1,5 +1,6 @@
 https://raw.githubusercontent.com/tbertinmahieux/MSongsDB/master/Tasks_Demos/Tagging/artists_test.txt
-https://data.mendeley.com/datasets/3t9vbwxgr5/2
-https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres
-http://millionsongdataset.com/musixmatch/
-https://www.kaggle.com/datasets/edenbd/150k-lyrics-labeled-with-spotify-valence
+https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/3t9vbwxgr5-2.zip
+https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres/download?datasetVersionNumber=3
+http://millionsongdataset.com/sites/default/files/AdditionalFiles/mxm_dataset_train.txt.zip
+https://www.kaggle.com/datasets/edenbd/150k-lyrics-labeled-with-spotify-valence/download?datasetVersionNumber=1
+https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres/download?datasetVersionNumber=3

@@ -1,6 +1,8 @@
 keys.txt
 data/*
-*__pycache__*
+
 trash/*
 semantic_search_env/*
 utils/*
+sandbox/*
+*__pycache__*

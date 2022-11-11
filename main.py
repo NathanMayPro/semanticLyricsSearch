@@ -1,7 +1,20 @@
-from service.genius import twitter
+import os 
+import sys
 
-request_token, request_token_secret = tuple(twitter.get_request_token())
-authorize_url = twitter.get_authorize_url(request_token)
+from utils.env import *
 
-print('Visit this URL in your browser: ' + authorize_url)
-pin = raw_input('Enter PIN from browser: ')
+if __name__ =="__main__":
+    """ The goal is to download all files from data source and save them to local disk"""
+    DATA_SOURCE_FILE = "data_source.txt"
+    DATA_DEST_DIR = "./data/data_lake/data_source_txt/"
+    
+    # ensure data source dir exist
+    if ensure_path(DATA_DEST_DIR):
+        # clean all precedent files
+        clean_path(DATA_DEST_DIR, keep_dir = True)
+        # for each file in data source, download it
+        data_source_url_list = extract_data(DATA_SOURCE_FILE, remove_element = "\n")
+        for url in data_source_url_list:
+            file_name = url_to_file_name(url)
+            download_file(url, os.path.join(DATA_DEST_DIR, file_name))
+    pass
